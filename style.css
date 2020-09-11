@@ -90,6 +90,7 @@ b {
     body{
         margin-left: 0;
     }
+    img {width: 50%;}
     #navbar {
         width: 100vw;
         transform:translateX(-1000px) ;   
