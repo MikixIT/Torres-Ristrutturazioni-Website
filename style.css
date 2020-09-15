@@ -16,6 +16,20 @@ body {
     max-width: 1000;
     text-align: center;
 }
+.slider{
+    max-width: 700px;
+    border: 10px solid white;
+    margin: 60px auto;
+}
+
+.slider .slider-items .items img{
+    max-width: 100%;
+    display: block;
+}
+
+
+img{width: 50%;}
+
 
 #navbar {
     width: 250px;
@@ -33,12 +47,14 @@ body {
 
 .nav-brand {
     text-align: center;
+    font-size: 28px;
+    
 }
 
-a{color: white;
+.linkbianchi {color: white;
 text-decoration: none;}
 
-a:hover{
+.linkbianchi:hover{
     color: rgb(165, 164, 164);
 }
 
@@ -48,9 +64,9 @@ a:hover{
 }
 .nav-items > li{
     list-style-type: none;
-    margin-bottom:10px ;
+    margin-bottom:30px ;
     text-align: left;
-    font-size: 18px;
+    font-size: 28px;
 }
 .nav-items > li:hover{
     cursor: pointer;
@@ -65,13 +81,31 @@ a:hover{
     border-radius: 20px;
     
 }
-
-b { 
-     
+.fbandinsta{
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+    color: white;
 }
+
+.fbandinsta:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.titleupsocial{
+    font-size: 20px;
+}
+
+
 
 .nav-footer {
     text-align: center;
+}
+
+.fbandinsta{
+
 }
 
 #hamburgerbtn{
@@ -90,7 +124,7 @@ b {
     body{
         margin-left: 0;
     }
-    img {width: 50%;}
+
     #navbar {
         width: 100vw;
         transform:translateX(-1000px) ;   
