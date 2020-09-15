@@ -5,6 +5,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     margin-left: 250px;
+    background-color: #ffffff;
 }
 
 *{
@@ -16,9 +17,9 @@ body {
     max-width: 1000;
     text-align: center;
 }
-.logo{width: 50%;}
+.logo{width: 35%;}
 
-.slider{                                     
+.slider{                                        /*slideshow*/
 	max-width: 700px;
 	border:10px solid  #410505e1;
 	margin:80px auto;
