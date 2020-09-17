@@ -31,6 +31,12 @@ body {
     margin: 20px;
 }
 
+#pulsante:hover{
+    background-color:#4b0606;
+    transform: scale(0.9);
+
+}
+
 .sottotitolo {
     font-size: 30px;
 }
