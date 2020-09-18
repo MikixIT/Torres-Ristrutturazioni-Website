@@ -244,7 +244,11 @@ text-decoration: none;}
          margin-bottom: 25px;
      }
 
-     .fbandinsta{font-size: 35px;}
+     .titleupsocial{
+         font-size: 17px;
+         margin-top: -20px;
+     }
+     .fbandinsta{font-size: 30px;}
 
      #hamburgerbtn{
         position:fixed ;
@@ -254,7 +258,7 @@ text-decoration: none;}
     }
 
 }
-
+/*RESPONSIVE FOR IPHONE5/5S*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
 and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 {
