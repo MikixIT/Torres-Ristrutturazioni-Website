@@ -145,7 +145,7 @@ text-decoration: none;}
 }
 .nav-items > li{
     list-style-type: none;
-    margin-bottom:30px ;
+    margin-bottom:40px ;
     text-align: left;
     font-size: 28px;
 }
@@ -241,10 +241,10 @@ text-decoration: none;}
 
      .nav-items > li {
          text-align: center;
+         margin-bottom: 25px;
      }
 
-
-
+     .fbandinsta{font-size: 35px;}
 
      #hamburgerbtn{
         position:fixed ;
@@ -253,5 +253,20 @@ text-decoration: none;}
         display: inline-block;
     }
 
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+   .fbandinsta{font-size: 30px; }
+   .nav-items{font-size: 10px;}
+   .nav-footer > .social{font-size: 5px;}
+   .logonavbar{width: 70%;}
+   .titleupsocial{font-size: 15px;}
+   .nav-items > li{
+    list-style-type: none;
+    margin-bottom:10px ;
+
+}
 }
 
