@@ -34,6 +34,12 @@ body {
     margin: 20px;
 }
 
+.imgcontatti {
+    width: 70%;
+  
+
+}
+
 #pulsante:hover{
     background-color:#4b0606;
     transform: scale(0.9);
@@ -49,6 +55,8 @@ body {
 .testopagina {
     font-size: 25px;
 }
+.imgsutesto{
+    width: 60%; margin: 40px;} 
 
 .slider{                                        /*slideshow*/
 	max-width: 900px;
@@ -221,7 +229,10 @@ text-decoration: none;}
     #pulsante {
         font-size: 20px;
     }
+    .imgsutesto{ width: 80%;}
 
+    .imgcontatti{ width:100%;}
+    
     .slider .left-slide{
        font-size: 20px;
     }
@@ -235,6 +246,7 @@ text-decoration: none;}
         transition: transform 500ms;
      }
 
+
      #navbar.open {
         transform: translateX(0);
      }
@@ -243,6 +255,7 @@ text-decoration: none;}
          text-align: center;
          margin-bottom: 25px;
      }
+     .nav-footer {margin-top: -50px;}
 
      .titleupsocial{
          font-size: 17px;
