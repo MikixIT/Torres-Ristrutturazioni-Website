@@ -244,7 +244,8 @@ text-decoration: none;}
         width: 100vw;
         transform:translateX(-1000px) ;   
         transition: transform 500ms;
-     }
+        justify-content: unset;
+    }
 
 
      #navbar.open {
@@ -255,12 +256,12 @@ text-decoration: none;}
          text-align: center;
          margin-bottom: 25px;
      }
-     .nav-footer {margin-top: -50px;}
+     .nav-footer {margin-top: -30px;}
 
      .titleupsocial{
-         font-size: 17px;
-         margin-top: -20px;
-     }
+    
+    }
+    
      .fbandinsta{font-size: 30px;}
 
      #hamburgerbtn{
