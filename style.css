@@ -256,13 +256,18 @@ text-decoration: none;}
          text-align: center;
          margin-bottom: 20px;
      }
-     .nav-footer {margin-top: -70px;}
+     .nav-footer {
+         margin-top: -70px;
+        padding: 2px;
+        }
 
      .titleupsocial{
     
     }
     
-     .fbandinsta{font-size: 30px;}
+     .fbandinsta{
+         font-size: 30px;
+        }
 
      #hamburgerbtn{
         position:fixed ;
