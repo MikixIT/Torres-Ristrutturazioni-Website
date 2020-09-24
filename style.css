@@ -21,9 +21,9 @@ body {
     width: 50%;
     
 }
+                                                     /*pulsante */
+.pulsante1 {
 
-#pulsante {
-    background-color:#410505e1 ;
     color: white;
     padding: 15px 42px;
     text-align: center;
@@ -31,8 +31,48 @@ body {
     display: inline-block;
     font-size: 35px;
     cursor: pointer; 
-    margin: 20px;
+    margin: 10px;
 }
+
+.pulsante1style{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 38px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #4b0606;
+    border: 2px solid #333;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  .pulsante1style span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .pulsante1style:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4b0606 ;
+    transition: all .35s;
+  }
+  
+  .pulsante1style:hover{
+    color: #fff;
+  }
+  
+  .pulsante1style:hover:after{
+    width: 100%;
+  }
 
 .imgcontatti {
     width: 70%;
@@ -40,24 +80,107 @@ body {
 
 }
 
-#pulsante:hover{
-    background-color:#4b0606;
-    transform: scale(0.9);
 
+#pulsantino {
+    display: none;
 }
 
 .sottotitolo {
-    font-size: 30px;
-    border-top: -100px;
-    
+    font-size: 40px;
+    border-top: -60px;
 }
+
+/* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+h1{
+    font-size: 2em;
+    font-weight: normal;
+
+}
+
+h3{
+
+    border-color: #410505e1;
+}
+
+.sottolineato{
+    text-decoration: underline;
+}
+
+
+                                                /* subtitle styles */
+.home-subtitle span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    text-decoration: overline;
+
+}
+
+.home-subtitle span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #410505e1;
+    animation: a-ltr-after 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-subtitle span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 1.5s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-subtitle span:nth-of-type(1)::before,
+.home-subtitle span:nth-of-type(1)::after{
+    animation-delay: 1.5s;
+}
+
+.home-subtitle span:nth-of-type(2)::before,
+.home-subtitle span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
 
 .testopagina {
     font-size: 25px;
 }
 .imgsutesto{
-    width: 60%; margin: 40px;} 
+    width: 70%; margin: 40px;} 
 
+
+    
+    
 .slider{                                        /*slideshow*/
 	max-width: 900px;
 	border:5px solid  #410505e1;
@@ -226,9 +349,24 @@ text-decoration: none;}
     .logo{
         width: 80%;
     }
-    #pulsante {
-        font-size: 20px;
+    
+    #pulsantino {
+        background-color:#410505e1 ;
+        color: white;
+        padding: 15px 42px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 35px;
+        cursor: pointer; 
+        margin: 20px;
     }
+    .pulsante1 { 
+        display: none;
+
+    }
+
+    
     .imgsutesto{ width: 80%;}
 
     .imgcontatti{ width:100%;}
@@ -239,6 +377,8 @@ text-decoration: none;}
     .slider .right-slide{
     font-size: 20px;
     }
+
+ 
 
     #navbar {
         width: 100vw;
@@ -254,7 +394,7 @@ text-decoration: none;}
 
      .nav-items > li {
          text-align: center;
-         margin-bottom: 20px;
+         margin-bottom: 25px;
      }
      .nav-footer {
          margin-top: -55px;
@@ -264,6 +404,7 @@ text-decoration: none;}
      .titleupsocial{
     
     }
+
     
      .fbandinsta{
          font-size: 30px;
@@ -283,11 +424,34 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 {
    .fbandinsta{font-size: 30px; }
    .nav-items{font-size: 10px;}
-   .nav-footer > .social{font-size: 5px;}
+   .nav-footer {display: none;}
    .logonavbar{width: 70%;}
-   .titleupsocial{font-size: 15px;}
+
    .nav-items > li{
     list-style-type: none;
     margin-bottom:10px ;}
+    #pulsantino {
+        background-color:#410505e1 ;
+        color: white;
+        padding: 15px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        cursor: pointer; 
+        margin: 20px;
+    }
+    .pulsante1 { 
+        display: none;
+
+    }
+
+    *{
+        font-size: 30px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
 }
 
