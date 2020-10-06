@@ -2,15 +2,27 @@ html {
 
 }
 body {
-    font-family: sans-serif;
+    font-family: sans-serif, 'Cardo', serif;
     margin: 0;
     margin-left: 250px;
-    background-color: #ffffff;
+
 }
 
 *{
     box-sizing: border-box;
 }
+
+.homebackground{
+background-image: url(images/sfondo6.png);
+background-repeat: no-repeat;
+background-size: 100%;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+   }
+
+
 .container {                                    /*contenuto pagine*/
     padding: 40px;
     margin: 0 auto;
@@ -19,10 +31,79 @@ body {
 }
 .logo{
     width: 50%;
+    margin-bottom: 20px;
     
 }
                                                      /*pulsante */
+
+.pulsantesottotitolo1{
+
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+.pulsantesottotitolo2{
+    color: white;
+    padding: 15px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    cursor: pointer; 
+    margin: 10px;
+}
+
+.pulsante2style{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    font-size: 38px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 2px solid #333;
+    letter-spacing: 1px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background-color: #4b0606;
+    
+  }
+
+  .pulsante2style span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .pulsante2style:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white ;
+    transition: all .35s;
+  }
+  
+  .pulsante2style:hover{
+    color: #4b0606;
+  }
+  
+  .pulsante2style:hover:after{
+    width: 100%;
+  }
+
+
 .pulsante1 {
+
 
     color: white;
     padding: 15px 42px;
@@ -105,6 +186,7 @@ h1{
     font-size: 2em;
     font-weight: normal;
 
+
 }
 
 h3{
@@ -117,13 +199,31 @@ h3{
 }
 
 
+ 
+
                                                 /* subtitle styles */
 .home-subtitle span{
     position: relative;
     overflow: hidden;
     display: block;
     line-height: 1.2;
-    text-decoration: overline;
+    padding: 10px;
+    color:#4b0606;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;;
+    font-size: 40px;
+    color: ; 
+    text-shadow: 5px 10px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+    
+
+
+
+    
+    
+
+
+
 
 }
 
@@ -172,14 +272,90 @@ h3{
 }
 
 
+
+                                                /* subtitle text styles */
+
+.home-subtitletext span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    padding: 10px;
+    color: #4b0606;
+
+}
+
+.home-subtitletext span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #410505e1;
+    animation: a-ltr-after 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-subtitletext span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 1.5s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-subtitletext span:nth-of-type(1)::before,
+.home-subtitletext span:nth-of-type(1)::after{
+    animation-delay: 1.5s;
+}
+
+.home-subtitletext span:nth-of-type(2)::before,
+.home-subtitletext span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+
 .testopagina {
     font-size: 25px;
 }
 .imgsutesto{
     width: 70%; margin: 40px;} 
 
+.ivantaggi{
+;
 
-    
+}
+
+.impresaedileristruttura{
+    font-size: 40px;
+    color: #4b0606;
+}
+
+.rivolgendosi{
+    margin-bottom: 25px;
+
+}
+
+.connoi{
+    margin:40px;
+    font-size: 30px;
+}
     
 .slider{                                        /*slideshow*/
 	max-width: 900px;
@@ -249,11 +425,12 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 5;
 }
 
 .logonavbar{
-    width: 80%;
-    border-top: 40px;
+    width: 100%;
+    border-top: 50px;
 }
 
 .nav-brand {
@@ -287,17 +464,16 @@ text-decoration: none;}
 }
 .nav-footer > .social {
     list-style-type: none;
-    display: inline-block;
+   display: inline-block;
     text-align: center;
     font-size: 30px;
-    border-radius: 20px;
+
     
 }
 .fbandinsta{
-    font-size: 40px;
-    display: inline-block;
-    padding: 10px;
-    text-align: left;
+    font-size: 45px;
+    padding: 15px;
+    text-align: center;
     color: white;
 }
 
@@ -363,6 +539,15 @@ text-decoration: none;}
     }
     .pulsante1 { 
         display: none;
+
+    }
+
+
+
+    .pulsante2style{
+        font-size: 30px;
+
+    
 
     }
 
