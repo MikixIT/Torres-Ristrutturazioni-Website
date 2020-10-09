@@ -336,7 +336,7 @@ h3{
     font-size: 25px;
 }
 .imgsutesto{
-    width: 70%; margin: 40px;} 
+    width: 80%; margin: 20px;} 
 
 .ivantaggi{
 ;
@@ -588,7 +588,8 @@ text-decoration: none;}
          margin-bottom: 12px;
      }
      .nav-footer {
-         margin-top: -80px;
+         margin-top: -50px;
+
         }
 
      .titleupsocial{
@@ -608,18 +609,26 @@ text-decoration: none;}
     }
 
 }
-/*RESPONSIVE FOR IPHONE5/5S*/
+
+                                                                /*RESPONSIVE FOR IPHONE5/5S*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
 and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 {
-   .fbandinsta{font-size: 30px; }
+   .fbandinsta{
+       font-size: 40px;
+       margin-top: -200px;
+    }
+    .nav-footer{
+        margin-top: -90px;
+    }
+
+
    .nav-items{font-size: 10px;}
-   .nav-footer {display: none;}
    .logonavbar{width: 70%;}
 
    .nav-items > li{
-    list-style-type: none;
-    margin-bottom:10px ;}
+    list-style-type: none;}
+
     #pulsantino {
         background-color:#410505e1 ;
         color: white;
@@ -636,8 +645,9 @@ and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
 
     }
 
+
     *{
-        font-size: 30px;
+        font-size: 20px;
     }
     
     h3{
