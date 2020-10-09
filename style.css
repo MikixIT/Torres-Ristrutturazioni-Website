@@ -214,7 +214,8 @@ h3{
     font-size: 40px;
     color: ; 
     text-shadow: 5px 10px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);
+    0px -5px 35px rgba(255,255,255,0.3);
+    
     
 
 
@@ -455,7 +456,7 @@ text-decoration: none;}
     list-style-type: none;
     margin-bottom:40px ;
     text-align: left;
-    font-size: 28px;
+    font-size: 30px;
 }
 .nav-items > li:hover{
     cursor: pointer;
@@ -463,16 +464,17 @@ text-decoration: none;}
 
 }
 .nav-footer > .social {
-    list-style-type: none;
-   display: inline-block;
+     display: inline-block;
     text-align: center;
-    font-size: 30px;
+    margin-top: 50px;
+    padding: 30px;
+
 
     
 }
 .fbandinsta{
-    font-size: 45px;
-    padding: 15px;
+    font-size: 40px;
+    padding: 20px;
     text-align: center;
     color: white;
 }
@@ -526,6 +528,10 @@ text-decoration: none;}
         width: 90%;
     }
     
+    .home-subtitle span{
+    font-size: 1em;
+    }
+
     #pulsantino {
         background-color:#410505e1 ;
         color: white;
