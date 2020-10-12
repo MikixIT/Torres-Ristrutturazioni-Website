@@ -526,8 +526,16 @@ text-decoration: none;}
     }
     .logo{
         width: 90%;
+        margin-bottom: 2em;
     }
     
+    .pulsantesottotitolo1{
+        text-align: center;
+    }
+    .pulsantesottotitolo2{
+        display: none;
+    }
+
     .home-subtitle span{
     font-size: 1em;
     }
