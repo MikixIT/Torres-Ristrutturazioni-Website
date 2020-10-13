@@ -698,12 +698,18 @@ text-decoration: none;}
         transform: translateX(0);
      }
 
+
+     .logonavbar{
+         margin-bottom: -30px;
+     }
+
      .nav-items > li {
          text-align: center;
-         margin-bottom: 12px;
+         margin-bottom: 14px;
      }
      .nav-footer {
-        margin-top: -40px;
+         margin-top: -35px;
+       
         }
 
      .titleupsocial{
