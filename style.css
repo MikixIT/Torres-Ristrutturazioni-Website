@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #4b0606;
     border: 2px solid #333;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     text-align: center;
     position: relative;
     transition: all .35s;
@@ -333,7 +333,8 @@ h3{
 }
 
 .rivolgendosi{
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+    font-size: 30px ;
 
 }
 
@@ -341,6 +342,17 @@ h3{
     margin:40px;
     font-size: 30px;
 }
+
+.chisiamohome{
+    font-size: 60px;
+    color:#410505e1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+
+
     
 .slider{                                        /*slideshow*/
 	max-width: 900px;
@@ -600,6 +612,31 @@ text-decoration: none;}
     margin-top: 1em;
 }
 
+.visitasocial{
+    margin-top: 90px;
+    font-size: 36px;
+}
+
+.socialfootercontatti > li{
+    font-size: 120px;
+    text-decoration: none;
+    display:inline-block;
+    text-align: center;
+    color: #4b0606;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.socialfootercontatti > li a{
+    color:#4b0606;
+}
+.socialfootercontatti > li a:hover{
+    color:black;
+}
+
+
+
+
   
 
                                                        /*MOBILE */
@@ -677,6 +714,19 @@ text-decoration: none;}
 
     .imgcontatti{ width:100%;}
     
+
+    .visitasocial{
+        font-size: 30px;
+    }
+
+    .socialfootercontatti li a{
+        font-size: 80px;
+        text-align: center;
+        padding: 5;
+   
+    }
+
+
     .slider .left-slide{
        font-size: 20px;
     }
@@ -705,7 +755,7 @@ text-decoration: none;}
 
      .nav-items > li {
          text-align: center;
-         margin-bottom: 14px;
+         margin-bottom: 20px;
      }
      .nav-footer {
          margin-top: -43px;
@@ -718,7 +768,7 @@ text-decoration: none;}
 
     
      .fbandinsta{
-         font-size: 30px;
+         font-size: 40px;
         }
 
      #hamburgerbtn{
