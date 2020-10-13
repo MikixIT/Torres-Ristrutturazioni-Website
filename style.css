@@ -448,10 +448,10 @@ text-decoration: none;}
 
 }
 .nav-footer > .social {
-     display: inline-block;
+    
     text-align: center;
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: 60px;
+    padding: 10px;
 
 
     
@@ -703,7 +703,7 @@ text-decoration: none;}
          margin-bottom: 12px;
      }
      .nav-footer {
-         margin-top: -85px;
+        margin-top: -40px;
         }
 
      .titleupsocial{
