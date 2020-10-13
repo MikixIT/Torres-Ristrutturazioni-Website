@@ -724,7 +724,7 @@ text-decoration: none;}
     .socialfootercontatti li a{
         font-size: 80px;
         text-align: center;
-        padding: 5;
+        padding:0;
    
     }
 
@@ -752,7 +752,7 @@ text-decoration: none;}
 
 
      .logonavbar{
-         margin-bottom: -30px;
+         margin-bottom: -40px;
      }
 
      .nav-items > li {
