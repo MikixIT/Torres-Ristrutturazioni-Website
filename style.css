@@ -534,7 +534,6 @@ text-decoration: none;}
     color: ; 
     text-shadow: 5px 10px 6px rgba(0,0,0,0.2),
     0px -5px 35px rgba(255,255,255,0.3);
-    
     margin-bottom: 2em;
     margin-top: 1em;
 }
@@ -637,6 +636,147 @@ text-decoration: none;}
 }
 
 
+                                            /*LE NOSTRE REALIZZAZIONI */
+
+.logolenostre{
+    width: 60%;
+    margin-bottom: 1em;
+}
+
+
+
+.home-subtitle-lenostre span{
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    padding: 0px;
+    color:#4b0606;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;;
+    font-size: 70px;
+    color: ; 
+    text-shadow: 5px 10px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+
+
+}
+
+.home-subtitle-lenostre span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #410505e1;
+    animation: a-ltr-after 1s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-subtitle-lenostre span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 1.5s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-subtitle-lenostre span:nth-of-type(1)::before,
+.home-subtitle-lenostre span:nth-of-type(1)::after{
+    animation-delay: 1.5s;
+}
+
+.home-subtitle-lenostre span:nth-of-type(2)::before,
+.home-subtitle-lenostre span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+
+.gallery-section{
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1{
+  text-align: center;
+  text-transform: uppercase;
+  color: #4b0606;
+  font-size: 60px;
+}
+
+.border{
+  width: 200px;
+  height: 4px;
+  background: #333;
+  margin: 60px auto;
+}
+
+.gallery-section .gallery{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image{
+  flex: 35%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+
+.gallery-section .image:hover img{
+  transform: scale(1.4);
+}
+
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .gallery-section .image{
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .gallery-section .image{
+    flex: 100%;
+  }
+}
+
+
+
 
 
   
@@ -727,6 +867,18 @@ text-decoration: none;}
         padding:0;
    
     }
+
+
+    .logolenostre{
+        width: 90%;
+    } 
+
+    .home-subtitle-lenostre{
+        margin-top: 1em;
+        margin-bottom: 0em;
+    }
+
+
 
 
     .slider .left-slide{
