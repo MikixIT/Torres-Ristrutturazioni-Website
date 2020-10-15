@@ -893,7 +893,7 @@ text-decoration: none;}
     #navbar {
         width: 100vw;
         transform:translateX(-1000px) ;   
-        transition: transform 500ms;
+        transition:all 1s cubic-bezier(.215, .61, .355, 1);
         justify-content: unset;
     }
 
