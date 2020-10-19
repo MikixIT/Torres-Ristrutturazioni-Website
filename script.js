@@ -5,6 +5,7 @@ hamburgerbtn.addEventListener('click', () => {
     navbar.classList.toggle('open');
 });
 
+
 var slides=document.querySelector('.slider-items').children;
 var nextSlide=document.querySelector(".right-slide");
 var prevSlide=document.querySelector(".left-slide");
@@ -92,6 +93,7 @@ function autoPlay(){
 }
 
  var timer = setInterval(autoPlay,5000);
+
 
 
 
